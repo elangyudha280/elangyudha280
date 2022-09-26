@@ -120,6 +120,7 @@ section.jumbotron {
   position: absolute;
   bottom: 0;
   background: radial-gradient(circle at 50% 130%, var(--s2) 10%, transparent);
+  /* mix-blend-mode: color-burn; */
 }
 
 .sun-container .sun {
