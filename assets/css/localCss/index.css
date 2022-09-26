@@ -24,8 +24,7 @@ main.template {
   top: 0;
   overflow-x: hidden;
   left: 0;
-
-  background: var(--s1);
+  background: linear-gradient(var(--v1), var(--s1), var(--v1));
 }
 
 /* code for navbar */
@@ -47,7 +46,7 @@ section.jumbotron {
   width: 100%;
   overflow: hidden;
   height: 100vh;
-  background: linear-gradient(var(--v1), var(--s1), var(--v1));
+  background: transparent;
 }
 
 /* cloud */
@@ -127,6 +126,7 @@ section.jumbotron {
   width: 400px;
   filter: blur(1.5);
   height: 400px;
+  box-shadow: 0 0 10px white;
   background: linear-gradient(white, rgba(255, 255, 255, 0) 90%);
   border-radius: 50%;
   animation: rise 3s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
