@@ -7,8 +7,8 @@
 :root {
   --bg-jumbotron-light1: #add7f6;
   --bg-jumbotron-light2: #a3bcf9;
-  --v1: #be91c6;
-  --v2: #8a65cc;
+  --v1: rgb(190, 145, 198);
+  --v2: rgb(138, 101, 204);
   --v3: #5e30d9;
   --transparentv3: #5e30d900;
   --v4: #3b1895;
@@ -24,7 +24,7 @@ main.template {
   top: 0;
   overflow-x: hidden;
   left: 0;
-  background: linear-gradient(var(--v1), var(--s1), var(--v1));
+  background: linear-gradient(var(--v1), var(--s1) 20%);
 }
 
 /* code for navbar */
