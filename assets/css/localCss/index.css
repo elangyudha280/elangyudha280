@@ -7,14 +7,14 @@
 :root {
   --bg-jumbotron-light1: #add7f6;
   --bg-jumbotron-light2: #a3bcf9;
-  --v1: #be91c6;
-  --v2: #8a65cc;
+  --v1: rgb(190, 145, 198);
+  --v2: rgb(138, 101, 204);
   --v3: #5e30d9;
   --transparentv3: #5e30d900;
   --v4: #3b1895;
   --s1: rgb(254, 167, 152);
-  --s2: #ff846e;
-  --cloud: #fea798;
+  --s2: rgb(255, 132, 110);
+  --cloud: rgb(254, 167, 152);
 }
 
 main.template {
@@ -24,7 +24,10 @@ main.template {
   top: 0;
   overflow-x: hidden;
   left: 0;
-  background: linear-gradient(var(--v1) 40%, var(--v2));
+  /* background: linear-gradient(var(--s1) 25%, var(--v2)); */
+
+  /* background: radial-gradient(circle at 50% 30%, var(--s2), var(--v2)); */
+  background: radial-gradient(circle at 50% 0%, var(--s1), var(--v2));
 }
 
 /* code for navbar */
@@ -154,7 +157,7 @@ section.jumbotron {
   width: 400px;
   filter: blur(1.5);
   height: 400px;
-  background: linear-gradient(hsla(0, 0%, 100%, 1), rgba(255, 255, 255, 0) 80%);
+  background: linear-gradient(hsla(0, 0%, 100%, 1), rgba(255, 255, 255, 0) 90%);
   border-radius: 50%;
   animation: rise 3s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
   box-shadow: 0 0 10px white;
