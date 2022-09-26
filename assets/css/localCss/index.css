@@ -24,8 +24,7 @@ main.template {
   top: 0;
   overflow-x: hidden;
   left: 0;
-
-  background: var(--s1);
+  background: linear-gradient(var(--v1) 40%, var(--v2));
 }
 
 /* code for navbar */
@@ -33,8 +32,8 @@ main.template {
 nav.navbar {
   background: rgba(255, 255, 255, 0.1);
 
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .navbar .color-nav {
@@ -46,8 +45,9 @@ section.jumbotron {
   position: relative;
   width: 100%;
   overflow: hidden;
+  background: transparent;
   height: 100vh;
-  background: linear-gradient(var(--v1), var(--s1), var(--v1));
+  background: linear-gradient(var(--v1) 10%, var(--s1));
 }
 
 /* cloud */
@@ -122,23 +122,44 @@ section.jumbotron {
 }
 .sun-container-1 {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
   height: 100%;
   bottom: 0;
-  background: radial-gradient(circle at 60% 100%, var(--s2), transparent);
+  left: 0;
+  background: radial-gradient(circle at 50% 100%, var(--s2), transparent);
   mix-blend-mode: color-burn;
+  -webkit-animation: fade 7.5s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
+  animation: fade 7.5s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
 }
+@-webkit-keyframes fade {
+  10% {
+    opacity: 0;
+  }
+  30%,
+  70% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  10% {
+    opacity: 0;
+  }
+  30%,
+  70% {
+    opacity: 1;
+  }
+}
+
 .sun-container .sun {
   position: relative;
   width: 400px;
   filter: blur(1.5);
   height: 400px;
-  background: linear-gradient(white, rgba(255, 255, 255, 0) 90%);
+  background: linear-gradient(hsla(0, 0%, 100%, 1), rgba(255, 255, 255, 0) 80%);
   border-radius: 50%;
   animation: rise 3s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
+  box-shadow: 0 0 10px white;
 }
 
 @-webkit-keyframes rise {
