@@ -127,9 +127,10 @@ section.jumbotron {
   width: 400px;
   filter: blur(1.5);
   height: 400px;
-  background: linear-gradient(white, rgba(255, 255, 255, 0) 90%);
+  background: linear-gradient(hsla(0, 0%, 100%, 0.9), rgba(255, 255, 255, 0) 90%);
   border-radius: 50%;
   animation: rise 3s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
+  box-shadow: 0 0 10px white;
 }
 
 @-webkit-keyframes rise {
