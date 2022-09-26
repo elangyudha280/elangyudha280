@@ -24,7 +24,6 @@ main.template {
   top: 0;
   overflow-x: hidden;
   left: 0;
-
   background: linear-gradient(var(--v1) 40%, var(--v2));
 }
 
