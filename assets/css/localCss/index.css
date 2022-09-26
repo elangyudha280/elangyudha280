@@ -24,14 +24,13 @@ main.template {
   top: 0;
   overflow-x: hidden;
   left: 0;
-  background: linear-gradient(var(--v1) 40%, var(--v2));
+  /* background: linear-gradient(var(--v1) 40%, var(--v2)); */
 }
 
 /* code for navbar */
 
 nav.navbar {
   background: rgba(255, 255, 255, 0.1);
-
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -45,7 +44,6 @@ section.jumbotron {
   position: relative;
   width: 100%;
   overflow: hidden;
-  background: transparent;
   height: 100vh;
   background: linear-gradient(var(--v1) 10%, var(--s1));
 }
@@ -195,13 +193,6 @@ section.jumbotron {
   max-height: 150px;
 }
 
-.content {
-  position: relative;
-  height: 20vh;
-  text-align: center;
-  background-color: white;
-}
-
 /* Animation */
 
 .parallax > use {
@@ -231,6 +222,21 @@ section.jumbotron {
     transform: translate3d(85px, 0, 0);
   }
 }
+
+/* code content */
+section.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--s2), transparent);
+}
+.water {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#fea79855, var(--v2));
+}
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
