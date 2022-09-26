@@ -24,10 +24,8 @@ main.template {
   top: 0;
   overflow-x: hidden;
   left: 0;
-  /* background: linear-gradient(var(--s1) 25%, var(--v2)); */
 
-  /* background: radial-gradient(circle at 50% 30%, var(--s2), var(--v2)); */
-  background: radial-gradient(circle at 50% 0%, var(--s1), var(--v2));
+  background: linear-gradient(to bottom, rgb(59, 80, 137), rgb(67, 62, 105) 30%);
 }
 
 /* code for navbar */
@@ -232,6 +230,15 @@ section.jumbotron {
     transform: translate3d(85px, 0, 0);
   }
 }
+
+/* section gradation */
+section.gradation {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(to bottom, rgb(77, 70, 118), transparent);
+}
+
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
