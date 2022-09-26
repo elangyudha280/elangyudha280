@@ -59,7 +59,7 @@ section.jumbotron {
   background: currentcolor;
   color: var(--cloud);
   top: 70vmin;
-  left: 20vmin;
+  left: 0;
   border-radius: 50%;
   box-shadow: 30vmin 0.5vmin 0 -1vmin currentcolor, -25vmin 0 0 -0.6vmin currentcolor;
   opacity: 0.2;
@@ -76,7 +76,7 @@ section.jumbotron {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(250%, 0, 0);
+    transform: translate3d(110vw, 0, 0);
   }
 }
 
@@ -85,11 +85,11 @@ section.jumbotron {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(250%, 0, 0);
+    transform: translate3d(110vw, 0, 0);
   }
 }
 .cloud-1 {
-  left: 60vmin;
+  left: 0;
   top: 15vmin;
   opacity: 0.3;
   filter: blur(1px);
@@ -100,15 +100,15 @@ section.jumbotron {
   animation-duration: 100s;
 }
 .cloud-2 {
-  left: 30vmin;
+  left: 0;
   top: 50vmin;
   opacity: 0.4;
   filter: blur(1px);
   -webkit-animation-delay: 0;
   animation-delay: 0;
   z-index: 4;
-  -webkit-animation-duration: 70s;
-  animation-duration: 70s;
+  -webkit-animation-duration: 80s;
+  animation-duration: 80s;
 }
 
 .sun-container {
@@ -157,7 +157,7 @@ section.jumbotron {
   width: 400px;
   filter: blur(1.5);
   height: 400px;
-  background: linear-gradient(hsla(0, 0%, 100%, 1), rgba(255, 255, 255, 0) 90%);
+  background: linear-gradient(hsla(0, 0%, 100%, 0.8), rgba(255, 255, 255, 0) 90%);
   border-radius: 50%;
   animation: rise 3s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
   box-shadow: 0 0 10px white;
