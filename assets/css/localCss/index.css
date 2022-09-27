@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -241,20 +242,92 @@ section.gradation {
 /* section about */
 section.about {
   position: relative;
-  width: 600px;
-  border: 1px solid red;
+  width: 650px;
+  /* border: 1px solid red; */
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: auto;
+}
+.about .about-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.about-profile {
+  font-family: 'Poppins', sans-serif;
+  padding: 0.6em 0;
+}
+.about-profile .about-name {
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: -0em;
+}
+
+.about-profile .about-profesi {
+  color: #fff;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+
+.about-img {
+  display: grid;
+  place-items: center;
+}
+.about-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  object-position: center;
+  box-shadow: 0 0 0 1.5px #fff;
 }
 
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
+
+@media screen and (max-width: 1000px) {
+  section.about {
+    padding: 0.5em 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .waves {
     height: 60px;
     min-height: 60px;
   }
   .content {
     height: 30vh;
+  }
+  section.about {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .waves {
+    height: 60px;
+    min-height: 60px;
+  }
+  .content {
+    height: 30vh;
+  }
+  section.about {
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    grid-template-areas:
+      'top'
+      'bottom';
+  }
+
+  .about-img {
+    grid-area: top;
+    padding: 0.8em 0;
+  }
+  .about-profile {
+    text-align: center;
+    grid-area: bottom;
   }
 }
 
@@ -263,5 +336,31 @@ section.about {
     width: 300px;
     filter: blur(1.5);
     height: 300px;
+  }
+  .about-profile .about-name {
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: -0em;
+    font-size: 1.3em;
+  }
+
+  .about-profile .about-profesi {
+    color: #fff;
+    font-size: 0.7em;
+    text-transform: capitalize;
+  }
+}
+@media screen and (max-width: 330px) {
+  .about-profile .about-name {
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: -0em;
+    font-size: 1em;
+  }
+
+  .about-profile .about-profesi {
+    color: #fff;
+    font-size: 0.6em;
+    text-transform: capitalize;
   }
 }
