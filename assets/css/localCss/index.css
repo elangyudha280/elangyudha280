@@ -341,9 +341,7 @@ section.section-container {
 }
 section.bio {
   width: 100%;
-  /* border: 1px solid cyan; */
 }
-
 .bio .title-bio {
   font-family: var(--RoundMedium);
   font-size: 1.5em;
@@ -365,6 +363,30 @@ section.bio {
   -webkit-backdrop-filter: blur(7);
   border-radius: 0.2em;
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.bio .card-bio {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.1fr 1.2fr;
+  padding: 0;
+}
+
+.card-bio .item-bio {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+.card-bio .year {
+  color: #fff;
+
+  /* border: 1px solid red; */
+  font-family: var(--RoundBold);
+}
+.card-bio .description-bio {
+  font-family: var(--RoundLight);
+  color: #fff;
 }
 
 /*Shrinking for mobile*/
@@ -394,8 +416,19 @@ section.bio {
   .info-about span {
     font-size: 0.9em;
   }
+  .bio .card-bio {
+    gap: 0.5em;
+  }
+  section.section-container {
+    position: relative;
+    width: 100%;
+    padding: 0.5em 0.9em 0.5em 2em;
+    margin: 0 auto;
+    margin-top: 1.5em;
+  }
 }
-
+@media screen and (max-width: 655px) {
+}
 @media screen and (max-width: 500px) {
   .waves {
     height: 60px;
@@ -429,6 +462,13 @@ section.bio {
   }
   .info-about {
     padding: 1em 0.5em;
+  }
+  section.section-container {
+    position: relative;
+    width: 100%;
+    padding: 0.5em 1.5em;
+    margin: 0 auto;
+    margin-top: 1.5em;
   }
 }
 
