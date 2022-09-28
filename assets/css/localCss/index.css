@@ -17,7 +17,9 @@
   --s2: rgb(255, 132, 110);
   --cloud: rgb(254, 167, 152);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 main.template {
   position: relative;
   width: 100%;
@@ -60,7 +62,7 @@ section.jumbotron {
   left: 0;
   border-radius: 50%;
   box-shadow: 30vmin 0.5vmin 0 -1vmin currentcolor, -25vmin 0 0 -0.6vmin currentcolor;
-  opacity: 0.2;
+  opacity: 0.4;
   transform: translate3d(-150vmin, 0, 0);
   -webkit-animation: clouds 120s infinite;
   animation: clouds 120s infinite;
@@ -74,7 +76,7 @@ section.jumbotron {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(110vw, 0, 0);
+    transform: translate3d(150vw, 0, 0);
   }
 }
 
@@ -83,14 +85,14 @@ section.jumbotron {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(110vw, 0, 0);
+    transform: translate3d(150vw, 0, 0);
   }
 }
 .cloud-1 {
   left: 0;
   top: 15vmin;
-  opacity: 0.3;
-  filter: blur(1px);
+  opacity: 0.2;
+  filter: blur(1.5px);
   -webkit-animation-delay: 0;
   animation-delay: 0;
   z-index: 4;
@@ -100,8 +102,8 @@ section.jumbotron {
 .cloud-2 {
   left: 0;
   top: 50vmin;
-  opacity: 0.4;
-  filter: blur(1px);
+  opacity: 0.2;
+  filter: blur(1.5px);
   -webkit-animation-delay: 0;
   animation-delay: 0;
   z-index: 4;
@@ -269,6 +271,7 @@ section.about {
   /* border: 1px solid red; */
   margin: 0 auto;
   margin-top: 1.5em;
+  padding-left: 1em;
   display: grid;
   grid-template-columns: 1fr 0.5fr;
   grid-template-rows: auto;
@@ -310,9 +313,9 @@ section.about {
 /*Shrinking for mobile*/
 
 @media screen and (max-width: 1000px) {
-  section.about {
+  /* section.about {
     padding: 0.5em 1em;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
