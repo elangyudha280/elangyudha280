@@ -377,6 +377,7 @@ section.bio {
   height: auto;
   padding: 0;
   margin: 0;
+  text-align: justify;
 }
 .card-bio .year {
   color: #fff;
