@@ -310,6 +310,15 @@ section.about {
   box-shadow: 0 0 0 1.5px #fff;
 }
 
+/* code css section BIO */
+section.bio {
+  position: relative;
+  width: 650px;
+  border: 1px solid red;
+  margin: 0 auto;
+  margin-top: 1.5em;
+}
+
 /*Shrinking for mobile*/
 
 @media screen and (max-width: 1000px) {
