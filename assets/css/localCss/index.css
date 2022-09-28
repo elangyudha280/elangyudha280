@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap') */
+
+@font-face {
+  font-family: 'RoundedBold';
+  src: url('../../font/RoundBold.ttf');
+}
+@font-face {
+  font-family: 'Roundedlight';
+  src: url('../../font/RoundLight.ttf');
+}
+@font-face {
+  font-family: 'RoundedMedium';
+  src: url('../../font/RoundMedium.ttf');
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +30,10 @@
   --s1: rgb(254, 167, 152);
   --s2: rgb(255, 132, 110);
   --cloud: rgb(254, 167, 152);
+  --poppins: 'Poppins', sans-serif;
+  --RoundBold: 'RoundedBold', sans-serif;
+  --RoundMedium: 'RoundedMedium', sans-serif;
+  --RoundLight: 'RoundedLight', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -264,6 +282,8 @@ section.info-about {
 }
 .info-about span {
   text-align: center;
+  font-size: 1em;
+  font-family: var(--RoundLight);
 }
 section.about {
   position: relative;
@@ -282,7 +302,7 @@ section.about {
   height: 100%;
 }
 .about-profile {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--RoundMedium);
   padding: 0.6em 0;
 }
 .about-profile .about-name {
@@ -305,18 +325,46 @@ section.about {
   width: 120px;
   height: 120px;
   object-fit: cover;
+  user-select: none;
   border-radius: 50%;
   object-position: center;
   box-shadow: 0 0 0 1.5px #fff;
 }
 
-/* code css section BIO */
-section.bio {
+/* code css section container */
+section.section-container {
   position: relative;
   width: 650px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0 auto;
   margin-top: 1.5em;
+}
+section.bio {
+  width: 100%;
+  /* border: 1px solid cyan; */
+}
+
+.bio .title-bio {
+  font-family: var(--RoundMedium);
+  font-size: 1.5em;
+  color: #fff;
+  width: 40px;
+  position: relative;
+  padding-bottom: 0.1em;
+}
+.title-bio:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7);
+  -webkit-backdrop-filter: blur(7);
+  border-radius: 0.2em;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /*Shrinking for mobile*/
@@ -342,6 +390,9 @@ section.bio {
   section.info-about-container {
     width: 100%;
     padding: 0 2em;
+  }
+  .info-about span {
+    font-size: 0.9em;
   }
 }
 
