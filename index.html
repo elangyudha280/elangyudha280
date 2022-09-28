@@ -8,6 +8,7 @@
     <meta name="description" content="my Website">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/thirdPartyCss/swiper-bundle.css">
     <link rel="stylesheet" href="assets/icon/css/all.min.css">
     <link rel="stylesheet" href="assets/css/localCss/index.css">
 
@@ -26,7 +27,7 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                   <a class="nav-link color-nav" href="#bookmark-about">aboutMe</a>
-                  <a class="nav-link color-nav" href="#">Portfolio</a>
+                  <a class="nav-link color-nav" href="#bookmark-portfolio">Portfolio</a>
                 </div>
               </div>
             </div>
@@ -77,7 +78,7 @@
           <!-- code for about  -->
           <section class="info-about-container">
             <section class="info-about">
-              <span>Hello, I'm a junior front-end developer based in indonesia!</span>
+              <span>Hello, I'm a junior front-end developer from  indonesia!</span>
             </section>
           </section>
           
@@ -113,13 +114,48 @@
             </section>
 
             <!-- section Hobby -->
-            <section class="hobby">
+            <section class="hobby" id="bookmark-portfolio">
               <h2 class="title-hobby">
                    Hobby
               </h2>
               <p class="description-hobby">
                 Programing, Playing Guitar, Photography
               </p>
+            </section>
+
+             <!-- section Hobby -->
+            <section class="portfolio">
+              <h2 class="title-portfolio">
+                   Portfolio
+              </h2>
+              <div class="programing-portfolio">
+                <h2>Programing</h2>
+                <div class="swiper mySwiper swipper-programing">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-programing1">
+                     <div class="visit-portfolio">
+                      <a href="">simple todo list</a>
+                     </div>
+                    </div>      
+                    <div class="swiper-slide slide-programing1">
+                      <div class="visit-portfolio">
+                       <a href="">simple todo list</a>
+                      </div>
+                     </div> 
+                     <div class="swiper-slide slide-programing1">
+                      <div class="visit-portfolio">
+                       <a href="">simple todo list</a>
+                      </div>
+                     </div> 
+                     <div class="swiper-slide slide-programing1">
+                      <div class="visit-portfolio">
+                       <a href="">simple todo list</a>
+                      </div>
+                     </div> 
+                  </div>
+                  
+                </div>
+              </div>
             </section>
           </section>
 
@@ -129,6 +165,7 @@
 
 
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/thirdPartyJs/swiper-bundle.js"></script>
     <script src="assets/js/localJs/index.js"></script>
 </body>
 </html>
