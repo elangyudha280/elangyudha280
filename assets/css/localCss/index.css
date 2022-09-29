@@ -530,9 +530,14 @@ section.portfolio {
   background-repeat: no-repeat;
 }
 .slide-programing1 {
-  background: url('../../images/demo.jpg');
+  background: url('../../images/sunnyside.jpg');
 }
-
+.slide-programing2 {
+  background: url('../../images/todo-list-app.png');
+}
+.slide-programing3 {
+  background: url('../../images/template_Login.jpg');
+}
 /* photograpy protfolio */
 .portfolio .photography-portfolio {
   position: relative;
