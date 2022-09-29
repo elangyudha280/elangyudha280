@@ -511,15 +511,45 @@ section.portfolio {
   color: #fff;
   text-decoration: none;
 }
-
-.slide-programing1 {
-  background: url('../../images/demo.jpg');
+.swipper-programing .item-p,
+.swipper-photography .item-p {
   background-size: cover;
   background-position: center;
   filter: contrast(1.3);
   background-repeat: no-repeat;
 }
+.slide-programing1 {
+  background: url('../../images/demo.jpg');
+}
 
+/* photograpy protfolio */
+.portfolio .photography-portfolio {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 1em;
+  border: 1px solid red;
+}
+.photography-portfolio h2 {
+  font-family: var(--RoundBold);
+  font-size: 1.5em;
+  color: #fff;
+}
+/* swipper programing  */
+.swipper-photography {
+  width: 100%;
+  padding: 0.5em;
+  height: 200px;
+  /* border: 1px solid red; */
+}
+.swipper-photography .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.slide-photography1 {
+  background: url('../../images/demo.jpg');
+}
 /*Shrinking for mobile*/
 
 @media screen and (max-width: 1000px) {
