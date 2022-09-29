@@ -56,6 +56,15 @@ nav.navbar {
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   font-family: var(--RoundMedium);
+  animation: navbar 1.5s cubic-bezier(1, -0.38, 0, 1.38) forwards;
+}
+@keyframes navbar {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 .navbar .color-nav {
   color: #fff;
