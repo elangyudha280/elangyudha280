@@ -603,6 +603,7 @@ section.media {
 }
 .btn-icon {
   border: none;
+  transition: 0.5s;
   background: transparent;
 }
 
@@ -621,8 +622,8 @@ footer.footer {
   text-align: center;
   font-family: var(--RoundLight);
 }
-.footer span{
-  font-size: .9em;
+.footer span {
+  font-size: 0.9em;
 }
 /*Shrinking for mobile*/
 

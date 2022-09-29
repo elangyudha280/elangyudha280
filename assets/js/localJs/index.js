@@ -1,5 +1,16 @@
 
 
+// code aos js
+
+AOS.init({
+  duration:700,
+  offset:320
+})
+
+
+
+
+
 // swipper programing
 const swiper = new Swiper(".swipper-programing", {
     slidesPerView: 1,
