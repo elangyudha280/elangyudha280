@@ -605,13 +605,26 @@ section.media {
   border: none;
   background: transparent;
 }
-/*Shrinking for mobile*/
 
-@media screen and (max-width: 1000px) {
-  /* section.about {
-    padding: 0.5em 1em;
-  } */
+/* code section footer */
+
+footer.footer {
+  position: relative;
+  width: 100%;
+  padding: 1em 0.5em;
+  margin-top: 150px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  text-align: center;
+  font-family: var(--RoundLight);
 }
+.footer span{
+  font-size: .9em;
+}
+/*Shrinking for mobile*/
 
 @media screen and (max-width: 768px) {
   .waves {
@@ -710,6 +723,10 @@ section.media {
     color: #fff;
     font-size: 0.7em;
     text-transform: capitalize;
+  }
+
+  .footer span {
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width: 330px) {
