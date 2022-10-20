@@ -550,6 +550,10 @@ section.portfolio {
 .slide-programing4 {
   background: url('../../images/random_kuotes.png');
 }
+
+.slide-programing5 {
+  background: url('../../images/rest_countries.png');
+}
 /* photograpy protfolio */
 .portfolio .photography-portfolio {
   position: relative;
