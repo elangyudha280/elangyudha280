@@ -43,3 +43,5 @@ const swiperPhotgrapy = new Swiper('.swipper-photography', {
     },
   },
 });
+
+
