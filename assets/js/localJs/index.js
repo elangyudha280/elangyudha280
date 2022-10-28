@@ -45,3 +45,8 @@ const swiperPhotgrapy = new Swiper('.swipper-photography', {
 });
 
 
+
+// fitur scroll moon
+
+let sun =  document.querySelector('#sun')
+console.log(sun)
