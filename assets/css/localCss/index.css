@@ -157,8 +157,8 @@ section.jumbotron {
   left: 0;
   background: radial-gradient(circle at 50% 100%, var(--s2), transparent);
   mix-blend-mode: color-burn;
-  -webkit-animation: fade 6s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
-  animation: fade 6s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
+  -webkit-animation: fade 6.3s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
+  animation: fade 6.3s cubic-bezier(0.25, -0.17, 0.05, 1.07) forwards;
 }
 @-webkit-keyframes fade {
   10% {
@@ -546,7 +546,7 @@ section.portfolio {
   background: url('../../images/todo-list-app.png');
 }
 .slide-programing3 {
-  background: url('../../images/template_Login.jpg');
+  background: url('../../images/signUp.png');
 }
 .slide-programing4 {
   background: url('../../images/random_kuotes.png');
