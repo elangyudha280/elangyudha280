@@ -522,6 +522,7 @@ section.portfolio {
   background: rgba(43, 43, 43);
   display: grid;
   place-items: center;
+  padding: 0.5em 0.8em;
   transition: 0.4s;
   font-family: var(--RoundMedium);
   text-transform: capitalize;
