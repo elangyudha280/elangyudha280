@@ -541,7 +541,7 @@ section.portfolio {
   background-repeat: no-repeat;
 }
 .slide-programing1 {
-  background: url('../../images/sunnyside.jpg');
+  background: url('../../images/simpleTodolist.png');
 }
 .slide-programing2 {
   background: url('../../images/socialMediaDashboard.png');
@@ -561,6 +561,9 @@ section.portfolio {
 }
 .slide-programing7 {
   background: url('../../images/snippet-template.png');
+}
+.slide-programing8 {
+  background: url('../../images/pricingComponent.png');
 }
 /* photograpy protfolio */
 .portfolio .photography-portfolio {
